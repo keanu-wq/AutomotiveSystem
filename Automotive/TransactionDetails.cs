@@ -1,0 +1,27 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Automotive
+{
+    public partial class TransactionDetails : Form
+    {
+        private int userId;
+        public TransactionDetails(int userId)
+        {
+            InitializeComponent();
+            this.userId = userId;
+        }
+
+        private void TransactionDetails_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
+}

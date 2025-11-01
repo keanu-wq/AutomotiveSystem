@@ -1,0 +1,14 @@
+# Visual Studio temp files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sqlite
+*.wsuo
+
+# Build results
+bin/
+obj/
+*.exe
+*.pdb
+*.cache

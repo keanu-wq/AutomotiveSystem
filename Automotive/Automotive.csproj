@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{62E0863E-BB55-4D4E-B349-7D73C2219E49}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Automotive</RootNamespace>
+    <AssemblyName>Automotive</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Docking">
+      <HintPath>..\..\..\..\Downloads\Krypton-master\Bin\ComponentFactory.Krypton.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Navigator">
+      <HintPath>..\..\..\..\Downloads\Krypton-master\Bin\ComponentFactory.Krypton.Navigator.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Ribbon">
+      <HintPath>..\..\..\..\Downloads\Krypton-master\Bin\ComponentFactory.Krypton.Ribbon.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>..\..\..\..\Downloads\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Workspace">
+      <HintPath>..\..\..\..\Downloads\Krypton-master\Bin\ComponentFactory.Krypton.Workspace.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="2-StepVerification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2-StepVerification.Designer.cs">
+      <DependentUpon>2-StepVerification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ApprovalsUC.Designer.cs">
+      <DependentUpon>ApprovalsUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientAdd.Designer.cs">
+      <DependentUpon>ClientAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientCardUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientCardUC.Designer.cs">
+      <DependentUpon>ClientCardUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientInformation.Designer.cs">
+      <DependentUpon>ClientInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientsUC.Designer.cs">
+      <DependentUpon>ClientsUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashboardUC.Designer.cs">
+      <DependentUpon>DashboardUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditClient.Designer.cs">
+      <DependentUpon>EditClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditClientAddHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditClientAddHistory.Designer.cs">
+      <DependentUpon>EditClientAddHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditClientEditHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditClientEditHistory.Designer.cs">
+      <DependentUpon>EditClientEditHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPasswordOTP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPasswordOTP.Designer.cs">
+      <DependentUpon>ForgotPasswordOTP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemAdd.Designer.cs">
+      <DependentUpon>ItemAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemCardUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ItemCardUC.Designer.cs">
+      <DependentUpon>ItemCardUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemEdit.Designer.cs">
+      <DependentUpon>ItemEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main-Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main-Admin.Designer.cs">
+      <DependentUpon>Main-Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OTPForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTPForm.Designer.cs">
+      <DependentUpon>OTPForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResetPassword.Designer.cs">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsTabAccountUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SettingsTabAccountUC.Designer.cs">
+      <DependentUpon>SettingsTabAccountUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsTabUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SettingsTabUC.Designer.cs">
+      <DependentUpon>SettingsTabUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUpRequest.Designer.cs">
+      <DependentUpon>SignUpRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StorageUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StorageUC.Designer.cs">
+      <DependentUpon>StorageUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransactionDetails.Designer.cs">
+      <DependentUpon>TransactionDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionLogsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TransactionLogsUC.Designer.cs">
+      <DependentUpon>TransactionLogsUC.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="2-StepVerification.resx">
+      <DependentUpon>2-StepVerification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApprovalsUC.resx">
+      <DependentUpon>ApprovalsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientAdd.resx">
+      <DependentUpon>ClientAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientCardUC.resx">
+      <DependentUpon>ClientCardUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientInformation.resx">
+      <DependentUpon>ClientInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientsUC.resx">
+      <DependentUpon>ClientsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardUC.resx">
+      <DependentUpon>DashboardUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditClient.resx">
+      <DependentUpon>EditClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditClientAddHistory.resx">
+      <DependentUpon>EditClientAddHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditClientEditHistory.resx">
+      <DependentUpon>EditClientEditHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPasswordOTP.resx">
+      <DependentUpon>ForgotPasswordOTP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemAdd.resx">
+      <DependentUpon>ItemAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemCardUC.resx">
+      <DependentUpon>ItemCardUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemEdit.resx">
+      <DependentUpon>ItemEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main-Admin.resx">
+      <DependentUpon>Main-Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTPForm.resx">
+      <DependentUpon>OTPForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ResetPassword.resx">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsTabAccountUC.resx">
+      <DependentUpon>SettingsTabAccountUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsTabUC.resx">
+      <DependentUpon>SettingsTabUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUpRequest.resx">
+      <DependentUpon>SignUpRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StorageUC.resx">
+      <DependentUpon>StorageUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionDetails.resx">
+      <DependentUpon>TransactionDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionLogsUC.resx">
+      <DependentUpon>TransactionLogsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-gear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\storage-box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\storage-box_White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people_White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transactionlog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transactionlog_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-gear1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\approval.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account_white1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\approval_white.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
