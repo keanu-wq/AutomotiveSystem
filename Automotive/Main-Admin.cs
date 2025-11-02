@@ -77,7 +77,7 @@ namespace Automotive
             }
         }
 
-
+       
         private void timer1_Tick_1(object sender, EventArgs e)
         {
             idleTime++;
@@ -99,6 +99,7 @@ namespace Automotive
                 login.Show();
             }
         }
+       
 
         private void mouseHoverChangeColor(KryptonButton btn, PictureBox pic)
         {
@@ -236,10 +237,17 @@ namespace Automotive
             this.MouseMove += new MouseEventHandler(UserActivity);
             this.KeyDown += new KeyEventHandler(UserActivity);
             this.MouseClick += new MouseEventHandler(UserActivity);
+
             LoadNameFromDatabase();
 
+            // Default tab
             currentTab = "Dashboard";
             mouseHoverChangeColor(btnDashboard, picHome);
+
+            // Load default UC
+            DashBoardAdminUC dashboard = new DashBoardAdminUC(userId);
+            dashboard.Dock = DockStyle.Fill;
+            UCHolder.Controls.Add(dashboard);
         }
 
         private void btnDashboard_MouseEnter(object sender, EventArgs e)
@@ -312,15 +320,29 @@ namespace Automotive
             mouseLeaveRevertColor(btnLogout, picLogout);
         }
 
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            if (currentTab == "Dashboard") return;
+
+            revertToOriginalColor();
+            currentTab = "Dashboard";
+            mouseHoverChangeColor(btnDashboard, picHome);
+
+            DashBoardAdminUC dashBoardAdminUC = new DashBoardAdminUC(userId);
+            dashBoardAdminUC.Dock = DockStyle.Fill;
+            UCHolder.Controls.Clear();
+            UCHolder.Controls.Add(dashBoardAdminUC);
+        }
+
         private void btnApprovals_Click(object sender, EventArgs e)
         {
-            if (currentTab == "Aprrovals")
+            if (currentTab == "Approvals")
                 return;
             else
             {
                 revertToOriginalColor();
                 currentTab = "Approvals";
-                mouseHoverChangeColor(btnReports, picReports);
+                mouseHoverChangeColor(btnApprovals, picApproval);
 
                 ApprovalsUC approvalUC = new ApprovalsUC(userId);
                 approvalUC.Dock = DockStyle.Fill;
@@ -329,10 +351,58 @@ namespace Automotive
             }
         }
 
-        private void Main_Admin_FormClosing(object sender, FormClosingEventArgs e)
+
+        private void btnTransactionLogs_Click(object sender, EventArgs e)
         {
-            Application.Exit();  
+            if (currentTab == "Transaction Logs")
+                return;
+            else
+            {
+                revertToOriginalColor();
+                currentTab = "Transaction Logs";
+                mouseHoverChangeColor(btnTransactionLogs, picTransaction);
+
+                TransactionLogADMINUC transactionLogTab = new TransactionLogADMINUC(userId);
+                transactionLogTab.Dock = DockStyle.Fill;
+                UCHolder.Controls.Clear();
+                UCHolder.Controls.Add(transactionLogTab);
+            }
         }
+
+        private void btnReports_Click(object sender, EventArgs e)
+        {
+            if (currentTab == "Reports")
+                return;
+            else
+            {
+                revertToOriginalColor();
+                currentTab = "Reports";
+                mouseHoverChangeColor(btnReports, picReports);
+
+                ReportsAdminUC transactionLogTab = new ReportsAdminUC(userId);
+                transactionLogTab.Dock = DockStyle.Fill;
+                UCHolder.Controls.Clear();
+                UCHolder.Controls.Add(transactionLogTab);
+            }
+        }
+        private void btnAccounts_Click(object sender, EventArgs e)
+        {
+            if (currentTab == "Accounts")
+                return;
+            else
+            {
+                revertToOriginalColor();
+                currentTab = "Accounts";
+                mouseHoverChangeColor(btnAccounts, picAccounts);
+
+                AccountsAdminUC accountsTab = new AccountsAdminUC(userId);
+                accountsTab.Dock = DockStyle.Fill;
+                UCHolder.Controls.Clear();
+                UCHolder.Controls.Add(accountsTab);
+            }
+        }
+
+
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
@@ -354,5 +424,12 @@ namespace Automotive
                 new Login().Show();
             }
         }
+
+        private void Main_Admin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();  
+        }
+
+        
     }
 }

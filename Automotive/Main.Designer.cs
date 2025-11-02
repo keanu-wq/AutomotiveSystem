@@ -510,6 +510,7 @@
             this.UCHolder.Name = "UCHolder";
             this.UCHolder.Size = new System.Drawing.Size(835, 602);
             this.UCHolder.TabIndex = 30;
+            this.UCHolder.Paint += new System.Windows.Forms.PaintEventHandler(this.UCHolder_Paint);
             // 
             // pictureBox1
             // 

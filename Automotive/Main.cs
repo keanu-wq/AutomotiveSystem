@@ -374,7 +374,7 @@ namespace Automotive
                 UCHolder.Controls.Clear();
                 UCHolder.Controls.Add(dashboardUC);
             }
-                
+
         }
 
         private void btnStorage_Click(object sender, EventArgs e)
@@ -437,6 +437,11 @@ namespace Automotive
                 revertToOriginalColor();
                 currentTab = "Reports";
                 mouseHoverChangeColor(btnReports, picReports);
+
+                ReportsUC reports = new ReportsUC();
+                reports.Dock = DockStyle.Fill;
+                UCHolder.Controls.Clear();
+                UCHolder.Controls.Add(reports);
             }
         }
 
@@ -455,6 +460,11 @@ namespace Automotive
                 UCHolder.Controls.Clear();
                 UCHolder.Controls.Add(settingsTab);
             }
+        }
+
+        private void UCHolder_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -7,47 +7,45 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI.Design;
 using System.Windows.Forms;
 
 namespace Automotive
 {
-    public partial class TransactionLogsUC : UserControl
+    public partial class TransactionLogADMINUC : UserControl
     {
         private string connectionString = @"Data Source=localhost\SQLEXPRESS;Initial Catalog=AutomotiveDB;Integrated Security=True;";
         private int userId;
-
-        public TransactionLogsUC(int userId)
+        public TransactionLogADMINUC(int userid)
         {
             InitializeComponent();
-            this.userId = userId;
+            this.userId = userid;
 
-            txtSearchDetails.KeyDown += TxtSearchDetails_KeyDown;
+            txtSearchDetailsAdmin.KeyDown += TxtSearchDetailsAdmin_KeyDown;
         }
 
-        private void TxtSearchDetails_KeyDown(object sender, KeyEventArgs e)
+        private void TxtSearchDetailsAdmin_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
                 e.SuppressKeyPress = true; // prevents ding sound
-                LoadTransactionLogs(txtSearchDetails.Text.Trim());
+                LoadTransactionLogsAdmin(txtSearchDetailsAdmin.Text.Trim());
             }
         }
-
-        private void TransactionLogsUC_Load(object sender, EventArgs e)
+        private void TransactionLogADMINUC_Load(object sender, EventArgs e)
         {
-            LoadTransactionLogs();
+         LoadTransactionLogsAdmin();   
         }
 
-        //LOADS DATA
-        private void LoadTransactionLogs(string searchText = "")
+        private void LoadTransactionLogsAdmin(string searchText = "")
         {
             string query = @"
-        SELECT logID AS [Log ID],
-               actionType AS [Action Type],
-               status AS [Status],
-               dateRequested AS [Date Requested]
-        FROM Transaction_Log
-        WHERE 1=1";
+                SELECT logID AS [Log ID],
+                       actionType AS [Action Type],
+                       status AS [Status],
+                       dateRequested AS [Date Requested]
+                FROM Transaction_Log
+                WHERE 1=1";
 
             if (!string.IsNullOrEmpty(searchText))
             {
@@ -57,7 +55,7 @@ namespace Automotive
                     status LIKE @search OR
                     CONVERT(VARCHAR, dateRequested, 120) LIKE @search
                 )";
-                }
+            }
 
             query += " ORDER BY dateRequested DESC";
 
@@ -73,58 +71,30 @@ namespace Automotive
                     DataTable dt = new DataTable();
                     sda.Fill(dt);
 
-                    dgvTransactionLog.DataSource = dt;
-                    dgvTransactionLog.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                    dgvTransactionLogAdmin.DataSource = dt;
+                    dgvTransactionLogAdmin.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                 }
             }
         }
 
-
-        //BUTTONS
-
-        private void btnSearch_Click(object sender, EventArgs e)
+        private void btnAdminSearch_Click(object sender, EventArgs e)
         {
-            LoadTransactionLogs(txtSearchDetails.Text.Trim());
+            LoadTransactionLogsAdmin(txtSearchDetailsAdmin.Text.Trim());
         }
 
-        private void btnViewInformation_Click(object sender, EventArgs e)
+        private void btnViewInfoAdmin_Click(object sender, EventArgs e)
         {
-            if (dgvTransactionLog.SelectedRows.Count == 0)
+            if (dgvTransactionLogAdmin.SelectedRows.Count == 0)
             {
                 MessageBox.Show("Please select a transaction to view.");
                 return;
             }
 
-            int selectedLogID = Convert.ToInt32(dgvTransactionLog.SelectedRows[0].Cells["Log ID"].Value);
+            int selectedLogID = Convert.ToInt32(dgvTransactionLogAdmin.SelectedRows[0].Cells["Log ID"].Value);
             TransactionDetails detailsForm = new TransactionDetails(selectedLogID);
             detailsForm.ShowDialog();
         }
 
-
-
-        private void cbChoicesOfSort_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dgvTransactionLog_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+        
     }
 }

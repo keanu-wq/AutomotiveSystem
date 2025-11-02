@@ -170,6 +170,7 @@
             this.btnReports.StateCommon.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.btnReports.TabIndex = 42;
             this.btnReports.Values.Text = "        REPORTS";
+            this.btnReports.Click += new System.EventHandler(this.btnReports_Click);
             this.btnReports.MouseEnter += new System.EventHandler(this.btnReports_MouseEnter);
             this.btnReports.MouseLeave += new System.EventHandler(this.btnReports_MouseLeave);
             // 
@@ -217,6 +218,7 @@
             this.btnTransactionLogs.StateCommon.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.btnTransactionLogs.TabIndex = 40;
             this.btnTransactionLogs.Values.Text = "        TRANSACTION LOGS";
+            this.btnTransactionLogs.Click += new System.EventHandler(this.btnTransactionLogs_Click);
             this.btnTransactionLogs.MouseEnter += new System.EventHandler(this.btnTransactionLogs_MouseEnter);
             this.btnTransactionLogs.MouseLeave += new System.EventHandler(this.btnTransactionLogs_MouseLeave);
             // 
@@ -403,6 +405,7 @@
             this.btnAccounts.StateCommon.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.btnAccounts.TabIndex = 26;
             this.btnAccounts.Values.Text = "        ACCOUNTS";
+            this.btnAccounts.Click += new System.EventHandler(this.btnAccounts_Click);
             this.btnAccounts.MouseEnter += new System.EventHandler(this.btnAccounts_MouseEnter);
             this.btnAccounts.MouseLeave += new System.EventHandler(this.btnAccounts_MouseLeave);
             // 
@@ -487,6 +490,7 @@
             this.btnDashboard.StateCommon.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.btnDashboard.TabIndex = 22;
             this.btnDashboard.Values.Text = "         DASHBOARD";
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             this.btnDashboard.MouseEnter += new System.EventHandler(this.btnDashboard_MouseEnter);
             this.btnDashboard.MouseLeave += new System.EventHandler(this.btnDashboard_MouseLeave);
             // 

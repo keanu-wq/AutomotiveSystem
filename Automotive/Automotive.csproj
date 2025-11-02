@@ -72,6 +72,12 @@
     <Compile Include="2-StepVerification.Designer.cs">
       <DependentUpon>2-StepVerification.cs</DependentUpon>
     </Compile>
+    <Compile Include="AccountsAdminUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AccountsAdminUC.Designer.cs">
+      <DependentUpon>AccountsAdminUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="ApprovalsUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -101,6 +107,12 @@
     </Compile>
     <Compile Include="ClientsUC.Designer.cs">
       <DependentUpon>ClientsUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashBoardAdminUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashBoardAdminUC.Designer.cs">
+      <DependentUpon>DashBoardAdminUC.cs</DependentUpon>
     </Compile>
     <Compile Include="DashboardUC.cs">
       <SubType>UserControl</SubType>
@@ -176,6 +188,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportsUC.Designer.cs">
+      <DependentUpon>ReportsUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsAdminUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportsAdminUC.Designer.cs">
+      <DependentUpon>ReportsAdminUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="ResetPassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -218,6 +242,12 @@
     <Compile Include="TransactionDetails.Designer.cs">
       <DependentUpon>TransactionDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="TransactionLogADMINUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TransactionLogADMINUC.Designer.cs">
+      <DependentUpon>TransactionLogADMINUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="TransactionLogsUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -226,6 +256,9 @@
     </Compile>
     <EmbeddedResource Include="2-StepVerification.resx">
       <DependentUpon>2-StepVerification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountsAdminUC.resx">
+      <DependentUpon>AccountsAdminUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ApprovalsUC.resx">
       <DependentUpon>ApprovalsUC.cs</DependentUpon>
@@ -241,6 +274,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ClientsUC.resx">
       <DependentUpon>ClientsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashBoardAdminUC.resx">
+      <DependentUpon>DashBoardAdminUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DashboardUC.resx">
       <DependentUpon>DashboardUC.cs</DependentUpon>
@@ -288,6 +324,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReportsUC.resx">
+      <DependentUpon>ReportsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsAdminUC.resx">
+      <DependentUpon>ReportsAdminUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ResetPassword.resx">
       <DependentUpon>ResetPassword.cs</DependentUpon>
     </EmbeddedResource>
@@ -308,6 +350,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TransactionDetails.resx">
       <DependentUpon>TransactionDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionLogADMINUC.resx">
+      <DependentUpon>TransactionLogADMINUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TransactionLogsUC.resx">
       <DependentUpon>TransactionLogsUC.cs</DependentUpon>

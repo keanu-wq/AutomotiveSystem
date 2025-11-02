@@ -30,33 +30,33 @@
         {
             this.pbTransactionImage = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lblModel = new System.Windows.Forms.Label();
+            this.lblDateRequested = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.lblVehicle = new System.Windows.Forms.Label();
-            this.lblName = new System.Windows.Forms.Label();
+            this.lblActionType = new System.Windows.Forms.Label();
             this.lblID = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblOldDateRequested = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblOldStatus = new System.Windows.Forms.Label();
+            this.lblOldActionType = new System.Windows.Forms.Label();
+            this.lblOldLogID = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.lblNewDateRequested = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
+            this.lblNewStatus = new System.Windows.Forms.Label();
+            this.lblNewActionType = new System.Windows.Forms.Label();
+            this.lblNewLogID = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbTransactionImage)).BeginInit();
@@ -76,11 +76,11 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.lblModel);
+            this.panel2.Controls.Add(this.lblDateRequested);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.lblVehicle);
-            this.panel2.Controls.Add(this.lblName);
+            this.panel2.Controls.Add(this.lblActionType);
             this.panel2.Controls.Add(this.lblID);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label8);
@@ -89,16 +89,16 @@
             this.panel2.Size = new System.Drawing.Size(407, 185);
             this.panel2.TabIndex = 58;
             // 
-            // lblModel
+            // lblDateRequested
             // 
-            this.lblModel.Font = new System.Drawing.Font("SF Pro Display", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblModel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
-            this.lblModel.Location = new System.Drawing.Point(254, 145);
-            this.lblModel.Name = "lblModel";
-            this.lblModel.Size = new System.Drawing.Size(130, 18);
-            this.lblModel.TabIndex = 58;
-            this.lblModel.Text = "Null";
-            this.lblModel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lblDateRequested.Font = new System.Drawing.Font("SF Pro Display", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateRequested.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
+            this.lblDateRequested.Location = new System.Drawing.Point(254, 145);
+            this.lblDateRequested.Name = "lblDateRequested";
+            this.lblDateRequested.Size = new System.Drawing.Size(130, 18);
+            this.lblDateRequested.TabIndex = 58;
+            this.lblDateRequested.Text = "Null";
+            this.lblDateRequested.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label10
             // 
@@ -133,16 +133,16 @@
             this.lblVehicle.Text = "Null";
             this.lblVehicle.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // lblName
+            // lblActionType
             // 
-            this.lblName.Font = new System.Drawing.Font("SF Pro Display", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
-            this.lblName.Location = new System.Drawing.Point(257, 84);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(127, 18);
-            this.lblName.TabIndex = 53;
-            this.lblName.Text = "Null";
-            this.lblName.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lblActionType.Font = new System.Drawing.Font("SF Pro Display", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblActionType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
+            this.lblActionType.Location = new System.Drawing.Point(257, 84);
+            this.lblActionType.Name = "lblActionType";
+            this.lblActionType.Size = new System.Drawing.Size(127, 18);
+            this.lblActionType.TabIndex = 53;
+            this.lblActionType.Text = "Null";
+            this.lblActionType.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // lblID
             // 
@@ -195,12 +195,12 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.label14);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lblOldDateRequested);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.lblOldStatus);
+            this.panel1.Controls.Add(this.lblOldActionType);
+            this.panel1.Controls.Add(this.lblOldLogID);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label13);
             this.panel1.Location = new System.Drawing.Point(16, 320);
@@ -222,15 +222,15 @@
             this.label14.Text = "Old Data";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label1
+            // lblOldDateRequested
             // 
-            this.label1.Font = new System.Drawing.Font("SF Pro Display", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
-            this.label1.Location = new System.Drawing.Point(30, 230);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 18);
-            this.label1.TabIndex = 58;
-            this.label1.Text = "Null";
+            this.lblOldDateRequested.Font = new System.Drawing.Font("SF Pro Display", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOldDateRequested.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
+            this.lblOldDateRequested.Location = new System.Drawing.Point(30, 230);
+            this.lblOldDateRequested.Name = "lblOldDateRequested";
+            this.lblOldDateRequested.Size = new System.Drawing.Size(130, 18);
+            this.lblOldDateRequested.TabIndex = 58;
+            this.lblOldDateRequested.Text = "Null";
             // 
             // label2
             // 
@@ -254,35 +254,35 @@
             this.label3.TabIndex = 55;
             this.label3.Text = "Status:";
             // 
-            // label4
+            // lblOldStatus
             // 
-            this.label4.Font = new System.Drawing.Font("SF Pro Display", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
-            this.label4.Location = new System.Drawing.Point(30, 184);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(127, 18);
-            this.label4.TabIndex = 54;
-            this.label4.Text = "Null";
+            this.lblOldStatus.Font = new System.Drawing.Font("SF Pro Display", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOldStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
+            this.lblOldStatus.Location = new System.Drawing.Point(30, 184);
+            this.lblOldStatus.Name = "lblOldStatus";
+            this.lblOldStatus.Size = new System.Drawing.Size(127, 18);
+            this.lblOldStatus.TabIndex = 54;
+            this.lblOldStatus.Text = "Null";
             // 
-            // label5
+            // lblOldActionType
             // 
-            this.label5.Font = new System.Drawing.Font("SF Pro Display", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
-            this.label5.Location = new System.Drawing.Point(30, 132);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(127, 18);
-            this.label5.TabIndex = 53;
-            this.label5.Text = "Null";
+            this.lblOldActionType.Font = new System.Drawing.Font("SF Pro Display", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOldActionType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
+            this.lblOldActionType.Location = new System.Drawing.Point(30, 132);
+            this.lblOldActionType.Name = "lblOldActionType";
+            this.lblOldActionType.Size = new System.Drawing.Size(127, 18);
+            this.lblOldActionType.TabIndex = 53;
+            this.lblOldActionType.Text = "Null";
             // 
-            // label7
+            // lblOldLogID
             // 
-            this.label7.Font = new System.Drawing.Font("SF Pro Display", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
-            this.label7.Location = new System.Drawing.Point(30, 90);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(127, 18);
-            this.label7.TabIndex = 52;
-            this.label7.Text = "Null";
+            this.lblOldLogID.Font = new System.Drawing.Font("SF Pro Display", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOldLogID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
+            this.lblOldLogID.Location = new System.Drawing.Point(30, 90);
+            this.lblOldLogID.Name = "lblOldLogID";
+            this.lblOldLogID.Size = new System.Drawing.Size(127, 18);
+            this.lblOldLogID.TabIndex = 52;
+            this.lblOldLogID.Text = "Null";
             // 
             // label9
             // 
@@ -310,12 +310,12 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.label15);
-            this.panel3.Controls.Add(this.label16);
+            this.panel3.Controls.Add(this.lblNewDateRequested);
             this.panel3.Controls.Add(this.label17);
             this.panel3.Controls.Add(this.label18);
-            this.panel3.Controls.Add(this.label19);
-            this.panel3.Controls.Add(this.label20);
-            this.panel3.Controls.Add(this.label21);
+            this.panel3.Controls.Add(this.lblNewStatus);
+            this.panel3.Controls.Add(this.lblNewActionType);
+            this.panel3.Controls.Add(this.lblNewLogID);
             this.panel3.Controls.Add(this.label22);
             this.panel3.Controls.Add(this.label23);
             this.panel3.Location = new System.Drawing.Point(349, 321);
@@ -337,15 +337,15 @@
             this.label15.Text = "New Data";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label16
+            // lblNewDateRequested
             // 
-            this.label16.Font = new System.Drawing.Font("SF Pro Display", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
-            this.label16.Location = new System.Drawing.Point(30, 230);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(130, 18);
-            this.label16.TabIndex = 58;
-            this.label16.Text = "Null";
+            this.lblNewDateRequested.Font = new System.Drawing.Font("SF Pro Display", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNewDateRequested.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
+            this.lblNewDateRequested.Location = new System.Drawing.Point(30, 230);
+            this.lblNewDateRequested.Name = "lblNewDateRequested";
+            this.lblNewDateRequested.Size = new System.Drawing.Size(130, 18);
+            this.lblNewDateRequested.TabIndex = 58;
+            this.lblNewDateRequested.Text = "Null";
             // 
             // label17
             // 
@@ -369,35 +369,35 @@
             this.label18.TabIndex = 55;
             this.label18.Text = "Status:";
             // 
-            // label19
+            // lblNewStatus
             // 
-            this.label19.Font = new System.Drawing.Font("SF Pro Display", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
-            this.label19.Location = new System.Drawing.Point(30, 184);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(127, 18);
-            this.label19.TabIndex = 54;
-            this.label19.Text = "Null";
+            this.lblNewStatus.Font = new System.Drawing.Font("SF Pro Display", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNewStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
+            this.lblNewStatus.Location = new System.Drawing.Point(30, 184);
+            this.lblNewStatus.Name = "lblNewStatus";
+            this.lblNewStatus.Size = new System.Drawing.Size(127, 18);
+            this.lblNewStatus.TabIndex = 54;
+            this.lblNewStatus.Text = "Null";
             // 
-            // label20
+            // lblNewActionType
             // 
-            this.label20.Font = new System.Drawing.Font("SF Pro Display", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
-            this.label20.Location = new System.Drawing.Point(30, 132);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(127, 18);
-            this.label20.TabIndex = 53;
-            this.label20.Text = "Null";
+            this.lblNewActionType.Font = new System.Drawing.Font("SF Pro Display", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNewActionType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
+            this.lblNewActionType.Location = new System.Drawing.Point(30, 132);
+            this.lblNewActionType.Name = "lblNewActionType";
+            this.lblNewActionType.Size = new System.Drawing.Size(127, 18);
+            this.lblNewActionType.TabIndex = 53;
+            this.lblNewActionType.Text = "Null";
             // 
-            // label21
+            // lblNewLogID
             // 
-            this.label21.Font = new System.Drawing.Font("SF Pro Display", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
-            this.label21.Location = new System.Drawing.Point(30, 90);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(127, 18);
-            this.label21.TabIndex = 52;
-            this.label21.Text = "Null";
+            this.lblNewLogID.Font = new System.Drawing.Font("SF Pro Display", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNewLogID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
+            this.lblNewLogID.Location = new System.Drawing.Point(30, 90);
+            this.lblNewLogID.Name = "lblNewLogID";
+            this.lblNewLogID.Size = new System.Drawing.Size(127, 18);
+            this.lblNewLogID.TabIndex = 52;
+            this.lblNewLogID.Text = "Null";
             // 
             // label22
             // 
@@ -450,33 +450,33 @@
         #endregion
         private System.Windows.Forms.PictureBox pbTransactionImage;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label lblModel;
+        private System.Windows.Forms.Label lblDateRequested;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label lblVehicle;
-        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Label lblActionType;
         private System.Windows.Forms.Label lblID;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblOldDateRequested;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblOldStatus;
+        private System.Windows.Forms.Label lblOldActionType;
+        private System.Windows.Forms.Label lblOldLogID;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label lblNewDateRequested;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label lblNewStatus;
+        private System.Windows.Forms.Label lblNewActionType;
+        private System.Windows.Forms.Label lblNewLogID;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
     }
